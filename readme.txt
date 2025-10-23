@@ -1,0 +1,1 @@
+pyinstaller --onefile --windowed --name "InternetSpeedTest" --hidden-import=builtins --hidden-import=speedtest --hidden-import=urllib.request --hidden-import=http.client --runtime-hook=pyi_rth_speedtest.py --add-data "logo.png;." --icon="app_icon.ico" internet_speedtest_backup.py
